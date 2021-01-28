@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-01-27 13:41:22
+ * @LastEditTime: 2021-01-28 10:29:02
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \LeetCode\461.cpp
+ */
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -75,7 +83,7 @@ int main()
 	cout<<s1.hammingDistance(1,4)<<endl;
 }
 
-//461. 汉明距离
+//461. 汉明距离1
 // 两个整数之间的汉明距离指的是这两个数字对应二进制位不同的位置的数目。
 // 给出两个整数 x 和 y，计算它们之间的汉明距离。
 // 注意：
