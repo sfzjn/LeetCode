@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-28 10:47:13
- * @LastEditTime: 2021-01-28 10:51:32
+ * @LastEditTime: 2021-01-28 11:07:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \LeetCode\226.cpp
@@ -21,7 +21,19 @@
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
-
+        TreeNode *tmpLeft=nullptr,*tmpRight=nullptr,*tmpNode=nullptr;
+        if(nullptr==root)
+        {
+            return nullptr;
+        }
+        else
+        {
+            tmpLeft=invertTree(root->right);
+            tmpRight=invertTree(root->left);
+            tmpNode=new TreeNode(root->val,tmpLeft,tmpRight);
+            return tmpNode;
+        }
+        
     }
 };
 
